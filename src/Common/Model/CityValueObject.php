@@ -19,4 +19,9 @@ final class CityValueObject
     {
         return new self($data['name'], $data['province']);
     }
+
+    public static function random(): self
+    {
+        return new self('John', 'Doe');
+    }
 }
